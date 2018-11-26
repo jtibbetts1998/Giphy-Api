@@ -5,7 +5,7 @@ $(".button01").on("click", function(event) {
     event.preventDefault();
 
     var resultsData = $(this).attr("data");
-    var queryURL = "http://api.giphy.com/v1/gifs/search?q=" + resultsData + "&api_key=zz4jHlgv2m2yKDgr63yd7o0E94HWtPO1&limit=4";
+    var queryURL = "http://api.giphy.com/v1/gifs/search?q=" + resultsData + "&api_key=zz4jHlgv2m2yKDgr63yd7o0E94HWtPO1&limit=10";
     $.ajax({
         url: queryURL,
         method: "GET"
